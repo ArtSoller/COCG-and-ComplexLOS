@@ -13,5 +13,66 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\Solvers">
+      <UniqueIdentifier>{e50721d9-4f54-469a-adce-06592b47a8cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Solvers">
+      <UniqueIdentifier>{7ba2f355-96e0-4ebe-905f-4a246d3e5c4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Storages">
+      <UniqueIdentifier>{38d610ab-6668-41d9-9237-6434c67319ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Storages">
+      <UniqueIdentifier>{a508b620-98ee-4d4f-8396-60c092dd291b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Preconditions">
+      <UniqueIdentifier>{d6ee6742-7a5b-4e2a-bb44-a42753c32ea0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Solvers\COCGSolver.cpp">
+      <Filter>Исходные файлы\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Storages\ComplexValue.cpp">
+      <Filter>Исходные файлы\Storages</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Storages\ComplexVector.cpp">
+      <Filter>Исходные файлы\Storages</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Storages\BlockMatrix.cpp">
+      <Filter>Исходные файлы\Storages</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Preconditions\ComplDiagPreconditioner.cpp">
+      <Filter>Исходные файлы\Storages</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Preconditions\ComplDiagPrecondFactory.cpp">
+      <Filter>Исходные файлы\Storages</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Solvers\COCGSolver.h">
+      <Filter>Файлы заголовков\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Storages\ComplexValue.h">
+      <Filter>Файлы заголовков\Storages</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Storages\ComplexVector.h">
+      <Filter>Файлы заголовков\Storages</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Storages\BlockMatrix.h">
+      <Filter>Файлы заголовков\Storages</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Storages\Method.h">
+      <Filter>Файлы заголовков\Storages</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Preconditions\ComplDiagPreconditioner.h">
+      <Filter>Файлы заголовков\Storages</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Preconditions\ComplDiagPrecondFactory.h">
+      <Filter>Файлы заголовков\Storages</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
