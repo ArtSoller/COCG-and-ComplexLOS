@@ -1,7 +1,7 @@
-//#pragma once
-//#include "ComplDiagPreconditioner.h"
-//
-//class ComplexDiagonalPreconditionerFactory {
-//public:
-//    ComplexDiagonalPreconditioner create_preconditioner(const BlockMatrix& matrix) const;
-//};
+#pragma once
+#include "ComplDiagPreconditioner.h"
+
+class ComplexDiagonalPreconditionerFactory {
+public:
+    ComplexDiagonalPreconditioner CreatePreconditioner(const BlockMatrix& matrix) const;
+};

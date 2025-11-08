@@ -7,6 +7,12 @@
 #ifndef PCH_H
 #define PCH_H
 
+#include <vector>
+#include <memory>
+#include <cmath>
+#include <stdexcept>
+#include <span>
+
 // Добавьте сюда заголовочные файлы для предварительной компиляции
 
 #endif //PCH_H

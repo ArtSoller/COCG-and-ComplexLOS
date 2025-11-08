@@ -1,13 +1,18 @@
 #include "ComplexValue.h"
 
-ComplexValue::ComplexValue() : _values{ 0.0 }, _hasImaginary(false) {}
-
-ComplexValue::ComplexValue(double real, double imaginary)
-    : _values{ real, imaginary }, _hasImaginary(imaginary != 0.0) {
+ComplexValue::ComplexValue() : _size(1) {
+    _values[0] = 0.0;
 }
 
-ComplexValue ComplexValue::Create(double real, double imaginary) {
-    return ComplexValue(real, imaginary);
+ComplexValue::ComplexValue(double real, double imaginary) {
+    _values[0] = real;
+    if (imaginary == 0.0) {
+        _size = 1;
+    }
+    else {
+        _values[1] = imaginary;
+        _size = 2;
+    }
 }
 
 double ComplexValue::Real() const {
@@ -15,9 +20,5 @@ double ComplexValue::Real() const {
 }
 
 double ComplexValue::Imaginary() const {
-    return _hasImaginary ? _values[1] : 0.0;
-}
-
-bool ComplexValue::HasImaginary() const {
-    return _hasImaginary;
+    return _size == 2 ? _values[1] : 0.0;
 }

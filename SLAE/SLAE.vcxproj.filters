@@ -28,13 +28,13 @@
     <Filter Include="Исходные файлы\Preconditions">
       <UniqueIdentifier>{d6ee6742-7a5b-4e2a-bb44-a42753c32ea0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\Preconditions">
+      <UniqueIdentifier>{f7c92966-07ff-4ab0-8959-f7b23aea3ab7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp">
       <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Solvers\COCGSolver.cpp">
-      <Filter>Исходные файлы\Solvers</Filter>
     </ClCompile>
     <ClCompile Include="src\Storages\ComplexValue.cpp">
       <Filter>Исходные файлы\Storages</Filter>
@@ -45,11 +45,14 @@
     <ClCompile Include="src\Storages\BlockMatrix.cpp">
       <Filter>Исходные файлы\Storages</Filter>
     </ClCompile>
-    <ClCompile Include="src\Preconditions\ComplDiagPreconditioner.cpp">
-      <Filter>Исходные файлы\Storages</Filter>
-    </ClCompile>
     <ClCompile Include="src\Preconditions\ComplDiagPrecondFactory.cpp">
-      <Filter>Исходные файлы\Storages</Filter>
+      <Filter>Исходные файлы\Preconditions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Preconditions\ComplDiagPreconditioner.cpp">
+      <Filter>Исходные файлы\Preconditions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Solvers\COCGSolver.cpp">
+      <Filter>Исходные файлы\Solvers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -69,10 +72,10 @@
       <Filter>Файлы заголовков\Storages</Filter>
     </ClInclude>
     <ClInclude Include="src\Preconditions\ComplDiagPreconditioner.h">
-      <Filter>Файлы заголовков\Storages</Filter>
+      <Filter>Файлы заголовков\Preconditions</Filter>
     </ClInclude>
     <ClInclude Include="src\Preconditions\ComplDiagPrecondFactory.h">
-      <Filter>Файлы заголовков\Storages</Filter>
+      <Filter>Файлы заголовков\Preconditions</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
